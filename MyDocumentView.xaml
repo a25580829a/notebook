@@ -25,7 +25,7 @@
                     <Image x:Name="image6" Height="40" Width="40" Source="/save.png"/>
                 </Button>
             </ToolBar>
-            <ToolBar Margin="157,0,-714,8">
+            <ToolBar Margin="157,0,-744,8">
                 <ToggleButton x:Name="Bold_Button" Command="ToggleBold" Height="40" Width="60">
                     <Image x:Name="image" Height="30" Width="40" Source="/bold.png"/>
                 </ToggleButton>
@@ -37,10 +37,11 @@
                 </ToggleButton>
                 <Separator/>
                 <xctk:ColorPicker x:Name="Font_Color_Picker" Width="100" DisplayColorAndName="True" SelectedColorChanged="Font_Color_Picker_SelectedColorChanged"></xctk:ColorPicker>
+                <xctk:ColorPicker x:Name="BackGroundColorPicker" Width="100" DisplayColorAndName="True" SelectedColorChanged="BackGroundColorPicker_SelectedColorChanged"/>
                 <ComboBox x:Name="CMBFontStyle" Width="120" Height="40" SelectionChanged="CMBFontStyle_SelectionChanged"></ComboBox>
-                <ComboBox x:Name="CMBFontSize" Width="120" Height="40" SelectionChanged="CMBFontSize_SelectionChanged"></ComboBox>
+                <ComboBox x:Name="CMBFontSize" Width="60" Height="40" SelectionChanged="CMBFontSize_SelectionChanged"></ComboBox>
             </ToolBar>
-            <ToolBar Width="150" Margin="709,0,-709,10">
+            <ToolBar Width="150" Margin="740,0,-740,10">
                 <Button x:Name="DeleteButton" Click="DeleteButton_Click">
                     <Image  Height="40" Width="40" Source="/delete.png"/>
                 </Button>

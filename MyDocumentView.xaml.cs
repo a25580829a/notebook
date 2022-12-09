@@ -121,5 +121,13 @@ namespace WpfApp1
                 range.Save(fs, DataFormats.Rtf);
             }
         }
+
+        private void BackGroundColorPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
+        {
+            Color backcolor = (Color)e.NewValue;
+            SolidColorBrush backBrush = new SolidColorBrush(backcolor);
+            //RTB.Selection.ApplyPropertyValue(TextElement.ForegroundProperty, fontBrush);
+            RTB.Background = backBrush;
+        }
     }
 }
